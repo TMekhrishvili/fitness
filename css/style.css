@@ -155,3 +155,34 @@
 .premium button {    
     background-color: #5EB6E1;
 }
+
+/* about us */
+
+.about-us-content {
+    width: 85%;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.about-us-text {
+    width: 40%;
+}
+
+.about-us-image-column1,
+.about-us-image-column2 {
+    width: 200px;
+    display: inline-block;
+}
+
+.about-us-image-column1 {
+    margin-right: 20px;
+}
+
+.about-us-image {
+    width: 100%;
+}
+
+.about-us-images-container {
+    width: 50%;
+    padding: 50px 0;
+}
