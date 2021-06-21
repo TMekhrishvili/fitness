@@ -1,5 +1,4 @@
-@import '../basic/font.scss';
+@import '../modules/variables.scss';
+@import '../modules/mixins.scss';
+@import '../modules/classes.scss';
 
-body {
-    padding: 2%;
-}
