@@ -2,3 +2,146 @@
 @import '../modules/mixins.scss';
 @import '../modules/classes.scss';
 
+body {
+    header {
+        margin: 20px;
+        div {
+            @include d-flex(row, space-around, center);
+            nav {
+                ul {
+                    @include d-flex(row, center, center);
+                    li {
+                        margin-left: 50px;
+                        a {
+                            color: $blackColor;
+                            font-family: $popinsBold;
+                        }
+                    }
+                }
+            }
+            .call-content {
+                div {
+                    width: 27px;
+                    height: 27px;
+                    @include border(solid, 2px, $blueColor);
+                    padding: 5px;
+                    border-radius: 50%;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+    .entry-section {
+        width: 100%;
+        height: 550px;
+        background-image: url('../img/header-image.jpg');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        .text-box {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(0, -50%);
+            h4 {
+                text-transform: capitalize;
+                font-family: $popins;
+                color: $whiteColor;
+                opacity: 0.75;
+                line-height: 50px;
+            }
+            h1 {
+                text-transform: capitalize;
+                font-family:  $popins;
+                color: $whiteColor;
+                opacity: 0.75;
+                line-height: 50px;
+                font-size: 36px;
+                width: 500px;
+            }
+            button {
+                width: 150px;
+                height: 40px;
+                margin-top: 20px;
+                background-color: $blueColor;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+        .social-icons {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            div {
+                width: 25px;
+                height: 45px;
+                background-color: $whiteColor;
+                border-top: solid 2px  $blueColor;
+                @include d-flex(column, center, center);
+            }
+        }
+    }
+    section {
+        .abonnements-content {
+            width: 80%;
+            margin: 50px auto;
+            @include d-flex(row, space-between, center);
+            .abonnements {
+                width: 400px;
+                height: 190px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;                
+                margin-right: 20px;
+                @include d-flex(column, center, center);
+                &:last-child {
+                    margin-right: 0;
+                }
+                h2 {
+                    color: $whiteColor;
+                    text-transform: capitalize;
+                    line-height: 25px;
+                    font-size: 18px;
+                    font-family: $popins;
+                }
+                p {
+                    color: $whiteColor;
+                    text-transform: capitalize;
+                    line-height: 25px;
+                    font-size: 12px;
+                    font-family: $popins;
+                }
+                button {
+                    width: 80px;
+                    padding: 5px;
+                    margin-top: 10px;
+                    border: none;
+                    cursor: pointer;
+                    color: $whiteColor;
+                }
+                .classic-button {
+                    background-color: $orangeColor;
+                }
+                .standard-button {
+                    background-color: $purpleColor;
+                }
+                .premium-button {
+                    background-color: $blueColor;
+                }
+            }
+            .classic {
+                background-image: url('../img/classic.jpg');   
+            }
+            
+            .standard {
+                background-image: url('../img/standard.jpg');
+            }
+            
+            .premium {
+                background-image: url('../img/premium.jpg');
+            }
+        }
+    }
+}
+
