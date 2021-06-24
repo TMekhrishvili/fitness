@@ -10,3 +10,8 @@
 @mixin border($type, $size, $color) {
     border: $type $size $color;
 }
+
+@mixin dimensions($width, $height) {
+    width: $width;
+    height: $height;
+}

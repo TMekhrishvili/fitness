@@ -21,8 +21,7 @@ body {
             } 
             .call-content {
                 div {
-                    width: 27px;
-                    height: 27px;
+                    @include dimensions(27px, 27px);
                     @include border(solid, 2px, $blueColor);
                     padding: 5px;
                     border-radius: 50%;
@@ -32,8 +31,7 @@ body {
         }
     }
     .entry-section {
-        width: 100%;
-        height: 550px;
+        @include dimensions(100%, 550px);
         background-image: url('../img/header-image.jpg');
         background-position: center;
         background-size: cover;
@@ -60,8 +58,7 @@ body {
                 width: 500px;
             }
             button {
-                width: 150px;
-                height: 40px;
+                @include dimensions(150px, 40px);
                 margin-top: 20px;
                 background-color: $blueColor;
                 border: none;
@@ -74,8 +71,7 @@ body {
             bottom: 20px;
             left: 0;
             div {
-                width: 25px;
-                height: 45px;
+                @include dimensions(25px, 45px);
                 background-color: $whiteColor;
                 border-top: solid 2px  $blueColor;
                 @include d-flex(column, center, center);
@@ -88,8 +84,7 @@ body {
             margin: 50px auto;
             @include d-flex(row, space-between, center);
             .abonnements {
-                width: 400px;
-                height: 190px;
+                @include dimensions(400px, 190px);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;                
@@ -180,8 +175,7 @@ body {
                     margin: 30px 0;
                 }
                 .read-more {
-                    width: 200px;
-                    height: 50px;
+                    @include dimensions(200px, 50px);
                     background-color: $blueColor;
                     padding: 10px;
                     font-family: $popins;
@@ -204,6 +198,59 @@ body {
     }
     .our-classes-container {
         background-color: $darkGrayColor;
+        .our-classes-content {
+            @include d-flex(column, center, center);
+            .our-classes-text-container {
+                @include d-flex(column, center, center);
+                padding: 60px 20px;
+                h3 {
+                    color: $whiteColor;
+                    font-family: $popins;
+                    line-height: 35px;
+                    font-size: 24px;
+                    &::after {
+                        width: 60px;
+                        content: '';
+                        display: block;
+                        border-bottom: solid 2px $blueColor;
+                        margin: 10px auto 30px auto;
+                    }
+                }
+                p {
+                    width: 60%;
+                    color: $whiteColor;
+                    font-family: $popins;
+                    font-size: 14px;                   
+                    text-align: center;
+                    line-height: 25px;
+                }
+            }
+            .our-classes-images-container {
+                width: 100%;
+                @include d-flex(row, center, center);
+                flex-wrap: wrap;
+                .our-class-image-content {
+                    width: 33.2%;
+                    position: relative;
+                    img {
+                        width: 100%;
+                    }
+                    div {
+                        width: 100%;
+                        height: 70px;
+                        position: absolute;
+                        bottom: 0;
+                        background-color: rgba(19, 25, 26, 0.68);
+                        @include d-flex(row, center, center);
+                        span {
+                            color: #fff;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
