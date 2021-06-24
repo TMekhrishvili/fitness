@@ -1,0 +1,229 @@
+/* general properties */
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+
+.header-content {
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.nav-li {
+    margin-left: 50px;
+}
+
+.nav-li a {
+    color: #000;
+    font-family: "Poppins extra bold", sans-serif;
+}
+
+.call-content {
+    width: 27px;
+    height: 27px;
+    border: solid 2px #5EB6E1;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+/* entry section */
+
+.entry-section {
+    width: 100%;
+    height: 550px;
+    background-image: url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+}
+
+.title,
+.start-text {
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    opacity: 0.75;
+    line-height: 50px;
+}
+
+.title {
+    font-size: 36px;
+    width: 500px;
+}
+
+.social-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.icon {
+    width: 25px;
+    height: 45px;
+    background-color: #fff;
+    border-top: solid 2px #5EB6E1;
+}
+
+.get-started-button {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #5EB6E1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*  abonnements types */
+
+.abonnements-content {
+    width: 80%;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.abonnements {
+    width: 370px;
+    height: 190px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.classic {
+    background-image: url('../img/classic.jpg');    
+}
+
+.standard {
+    background-image: url('../img/standard.jpg');
+}
+
+.premium {
+    background-image: url('../img/premium.jpg');
+}
+
+.abonnements h2 {
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 25px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.abonnements p {
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 25px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.abonnements button {
+    width: 80px;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.classic button {    
+    background-color: #FF6C2C;
+}
+
+.standard button {    
+    background-color: #945B9F;
+}
+
+.premium button {    
+    background-color: #5EB6E1;
+}
+
+/* about us */
+
+.about-us-container {
+    margin: 150px 0;
+}
+
+.about-us-content {
+    width: 85%;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.about-us-text {
+    width: 40%;
+}
+
+.about-us-image {
+    width: 250px;
+    margin: 20px;
+}
+
+.about-us-images-outside-container {
+    justify-content: flex-end;
+}
+
+.about-us-images-container {
+    flex-direction: column;
+}
+
+.about-us {
+    color: #FF6C2C;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 5px;
+    line-height: 30px;
+}
+
+.about-us-title {
+    text-transform: capitalize;
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    line-height: 60px;
+}
+
+.about-us-title::after {
+    content: '';
+    display: block;
+    border-bottom: solid 2px #5EB6E1;
+    width: 150px;
+}
+
+.about-us-p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.about-us-text-color {
+    color: #FF6C2C;
+}
+
+.read-more {
+    width: 200px;
+    height: 50px;
+    background-color: #5EB6E1;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    border:  none;
+    border-radius: 5px;
+    cursor: pointer;
+}

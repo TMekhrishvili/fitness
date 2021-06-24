@@ -18,7 +18,7 @@ body {
                         }
                     }
                 }
-            }
+            } 
             .call-content {
                 div {
                     width: 27px;
@@ -142,6 +142,68 @@ body {
                 background-image: url('../img/premium.jpg');
             }
         }
+    }
+    .about-us-container {
+        margin: 150px 0;
+        .about-us-content {
+            width: 85%;
+            margin: 50px auto;
+            @include d-flex(row, space-between, center);
+            .about-us-text {
+                width: 40%;
+                .about-us {
+                    color: #FF6C2C;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-family: $popins;
+                    letter-spacing: 5px;
+                    line-height: 30px;
+                }
+                .about-us-title {
+                    text-transform: capitalize;
+                    font-size: 32px;
+                    font-family: $popins;
+                    line-height: 60px;
+                    &::after {
+                        content: '';
+                        display: block;
+                        border-bottom: solid 2px $blueColor;
+                        width: 150px;
+                    }
+                }
+                .about-us-text-color {
+                    color: $orangeColor;
+                }
+                .about-us-p {
+                    font-family: $popins;
+                    font-size: 16px;
+                    margin: 30px 0;
+                }
+                .read-more {
+                    width: 200px;
+                    height: 50px;
+                    background-color: $blueColor;
+                    padding: 10px;
+                    font-family: $popins;
+                    border:  none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+            .about-us-images-outside-container {
+                @include d-flex(row, flex-end, center);
+                .about-us-image {
+                    width: 250px;
+                    margin: 20px;
+                }
+                .about-us-images-container {
+                    @include d-flex(column, center, center);
+                }
+            }
+        }
+    }
+    .our-classes-container {
+        background-color: $darkGrayColor;
     }
 }
 
